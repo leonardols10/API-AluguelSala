@@ -1,0 +1,6 @@
+21:33:54.414 [http-nio-8080-exec-10] INFO  c.a.controller.RentController - Received request to rent: PostRentRequest(customerId=1, roomIds=[1])
+21:33:54.453 [http-nio-8080-exec-10] INFO  c.a.controller.RentController - Rent created successfully
+21:52:42.793 [http-nio-8080-exec-6] INFO  c.a.controller.RentController - Received request to rent: PostRentRequest(customerId=1, roomIds=[1])
+21:52:42.836 [http-nio-8080-exec-6] INFO  c.a.controller.RentController - Rent created successfully
+21:52:44.806 [http-nio-8080-exec-9] INFO  c.a.controller.RentController - Received request to rent: PostRentRequest(customerId=1, roomIds=[1])
+21:52:44.818 [http-nio-8080-exec-9] INFO  c.a.controller.RentController - Rent created successfully

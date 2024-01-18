@@ -1,0 +1,45 @@
+<configuration>
+    <!-- Console Appender -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="RENT_FILE" class="ch.qos.logback.core.FileAppender">
+        <file>logs/rent-controller.log</file>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="ROOM_FILE" class="ch.qos.logback.core.FileAppender">
+        <file>logs/room-controller.log</file>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="CUSTOMER_FILE" class="ch.qos.logback.core.FileAppender">
+        <file>logs/customer-controller.log</file>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="info">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+
+    <logger name="com.aluguelsala.controller.RentController" level="info">
+        <appender-ref ref="RENT_FILE"/>
+    </logger>
+
+    <logger name="com.aluguelsala.controller.RoomController" level="info">
+        <appender-ref ref="ROOM_FILE"/>
+    </logger>
+
+    <logger name="com.aluguelsala.controller.CustomerController" level="info">
+        <appender-ref ref="CUSTOMER_FILE"/>
+    </logger>
+</configuration>

@@ -1,0 +1,2 @@
+21:30:16.648 [http-nio-8080-exec-1] INFO  c.a.controller.RoomController - Room created successfully: com.aluguelsala.controller.request.PostRoomRequest@60301b60
+21:50:33.134 [http-nio-8080-exec-6] INFO  c.a.controller.RoomController - Room created successfully: com.aluguelsala.controller.request.PostRoomRequest@78057614
